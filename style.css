@@ -2,6 +2,7 @@
     margin: 0;
     border: 0;
     font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 body p {
@@ -19,55 +20,135 @@ header {
     text-transform: uppercase;
     color: white;
     padding: 2vh 5vw;
+    font-size: 10vw;
 }
 
-/* pop-up menu */
-nav ul{
-    position: fixed;
-    margin-top: 12vh;
-    width: 100%;
-    height: 100%;
-    background-color: #534666;
-    right: -100%;
-    text-align: center;
-    transition: all .5s;
-    padding-top: 10%;
-}
-    
-nav ul.show {
-    right: 0;
-}
-
-nav li
-{
-    display: block;
-    margin: 50px 0;
-}
-
-nav a
-{
-    color: white;
+.logo a {
     text-decoration: none;
-    text-transform: lowercase;
-    font-size: 50px;
-    font-weight: 700;
 }
 
-nav a:hover
-{
-    color: #478ba2;
+/* ---------------- MENU ----------------  */
+/* menu button */
+.nav-button {
+    position: fixed; /* fixed = er placeret ift. viewpoint aka den forbliver altid på samme sted selv når siden bliver scrolled */
+    top: 0.7vh; /* Bruger top og right til at placere elementet */
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    width: 5vw; /* Bruger width og height til at styre størrelsen på burger menuen */
+    height: 4vw;
+    margin: 3vh 5vw;
+    color: white;
 }
 
-/* menu icon */
-header #menu {
+.nav-button::before {
+    content: ""; /* Skriver "" i content for at lave en streg */
+    position: absolute; /* absolute = er placeret ift sin normale position */
+    top: -5px; /* Bruger top, left, bottom og right til at flytte elementet */
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s cubic-bezier(0.75, 0, 0.25, 1);
+}
+
+/* miderste streg i burgermenu */
+.nav-button span {
     display: block;
-    cursor: pointer;
-    transition: .3s;
-    z-index: 2;
-    margin-left: 45vw;
-    margin-top: 2vh;
+    width: 100%;
+    height: .25vh;
+    transition: transform 1s cubic-bezier(0.75, 0, 0.25, 1);
+    background: currentColor;
 }
 
-.bi-list{
-    width: 50px;
+/* before=øverste streg og after=nederste streg i burgermenu */
+.nav-button span::before, .nav-button span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    height: .25vh;
+    background: currentColor;
+    transition: transform 0.4s cubic-bezier(0.75, 0, 0.25, 1), top 0.4s 0.4s cubic-bezier(0.75, 0, 0.25, 1), background 0.2s cubic-bezier(0.75, 0, 0.25, 1);
+}
+
+.nav-button span::before {
+    top: 0;
+}
+
+.nav-button span::after {
+    top: calc(100% - 2px);
+}
+
+.nav-trigger-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    position: fixed;
+}
+
+.nav-trigger-input:focus + label {
+    color: white;
+}
+
+.nav-trigger-input:focus + label::before {
+    opacity: 1;
+}
+
+.nav-trigger-input:checked + label {
+    height: 10px;
+    color: white;
+}
+
+.nav-trigger-input:checked + label span {
+    transform: rotate(45deg);
+}
+
+.nav-trigger-input:checked + label span::before, .nav-trigger-input:checked + label span::after {
+    top: calc(50% - 1px);
+    transition: transform 0.4s 0.4s cubic-bezier(0.75, 0, 0.25, 1), top 0.4s cubic-bezier(0.75, 0, 0.25, 1), background 0.2s cubic-bezier(0.75, 0, 0.25, 1);
+}
+
+.nav-trigger-input:checked + label span::after {
+    transform: rotate(90deg);
+}
+
+.nav-trigger-input:checked ~ ul {
+    z-index: 9;
+    transform: none;
+    transition: 0.5s cubic-bezier(0.75, 0, 0.25, 1);
+}
+
+.nav-list {
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: #ffb480;
+    font-size: 12vw;
+    padding: 10vh 10vw;
+    transform: translate(120vw) rotate(45deg);
+    transition: 0.2s cubic-bezier(0.75, 0, 0.25, 1);
+}
+
+.nav-item {
+    list-style: none;
+}
+  
+.nav-item + .nav-item {
+    margin-top: 3vh;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
 }
