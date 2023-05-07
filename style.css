@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    border: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body p {
+    font-family: 'Prata', serif;
+}
+
+header {
+    display: flex;
+    background-color: #74CCBD;
+    height: 10vh;
+    width: 100%;
+}
+
+.logo h1 {
+    text-transform: uppercase;
+    color: white;
+    padding: 2vh 5vw;
+}
+
+/* pop-up menu */
+nav ul{
+    position: fixed;
+    margin-top: 12vh;
+    width: 100%;
+    height: 100%;
+    background-color: #534666;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+    padding-top: 10%;
+}
+    
+nav ul.show {
+    right: 0;
+}
+
+nav li
+{
+    display: block;
+    margin: 50px 0;
+}
+
+nav a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+nav a:hover
+{
+    color: #478ba2;
+}
+
+/* menu icon */
+header #menu {
+    display: block;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 2;
+    margin-left: 45vw;
+    margin-top: 2vh;
+}
+
+.bi-list{
+    width: 50px;
+}
