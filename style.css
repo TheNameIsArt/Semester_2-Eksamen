@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #74ccbd82;
+}
 body p {
     font-family: 'Prata', serif;
 }
@@ -103,7 +106,7 @@ header {
 
 .nav-trigger-input:checked + label {
     height: 10px;
-    color: white;
+    color: black;
 }
 
 .nav-trigger-input:checked + label span {
@@ -133,10 +136,10 @@ header {
     bottom: 0;
     right: 0;
     z-index: -1;
-    background: #ffb480;
+    background: white;
     font-size: 12vw;
     padding: 10vh 10vw;
-    transform: translate(120vw) rotate(45deg);
+    transform: translate(130vw) rotate(45deg);
     transition: 0.2s cubic-bezier(0.75, 0, 0.25, 1);
 }
 
@@ -151,4 +154,154 @@ header {
 .nav-link {
     text-decoration: none;
     color: inherit;
+}
+
+.banner {
+    width: 100%;
+    height: 20vh;
+    background-image: url(img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px #ffb58096;
+}
+
+.banner-title {
+    position: absolute;
+    z-index: 2;
+    margin: 2vh 15vw;
+    font-size: 90px;
+}
+
+.banner-txt {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    margin: 7vh 15vw;
+    font-size: 50px;
+}
+
+.banner-btn {
+    position: absolute;
+    z-index: 2;
+    margin: 14vh 40vw;
+    padding: 20px;
+    font-size: 50px;
+    background-color: #74CCBD;
+    border-radius: 10%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.headings {
+    text-align: center;
+    font-size: 80px;
+    margin: 2vh 0;
+}
+
+.tutorial {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 1.5vh 1.5vw;
+}
+
+.card img {
+    width: 22vw;
+    height: 6vh;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10% 10% 0 0;
+}
+
+.card-container {
+    background-color: #74CCBD;
+    width: 22vw;
+    height: 17.5vh;
+    border-radius: 0 0 10% 10%;
+}
+
+.card-container h4 {
+    font-size: 30px;
+    padding: 15px;
+}
+
+.card-container p {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.card-btn {
+    position: absolute;
+    z-index: 2;
+    padding: 20px;
+    margin-left: 2vw;
+    font-size: 20px;
+    background-color: #74CCBD;
+    text-transform: uppercase;
+    color: white;
+}
+
+.information {
+    display: flex;
+    margin: 2vh 0;
+}
+
+.info {
+    background-color: #74CCBD;
+    margin: 0 5vw;
+    text-align: center;
+    border-radius: 10%;
+    padding: 20px;
+    height: 20vh;
+}
+
+.info h2 {
+    font-size: 30px;
+}
+
+.info p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.info-btn {
+    position: absolute;
+    z-index: 2;
+    padding: 20px;
+    font-size: 20px;
+    margin-left: -6vw;
+    margin-top: 1.5vh;
+    background-color: #ffb480;
+    text-transform: uppercase;
+    color: white;
+}
+
+.podcast-banner {
+    width: 100%;
+    height: 14vh;
+    background-color: #ffb580;
+}
+
+.podcast-banner h1 {
+    font-size: 70px;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.podcast-banner-btn {
+    position: absolute;
+    z-index: 2;
+    padding: 20px;
+    font-size: 50px;
+    margin-left: 42vw;
+    margin-top: 1.5vh;
+    background-color: #74CCBD;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10%;
 }

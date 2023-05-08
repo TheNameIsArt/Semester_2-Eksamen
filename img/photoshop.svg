@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325.62 385.15">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7, .cls-2, .cls-3, .cls-8 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7, .cls-3, .cls-8 {
+        stroke: #000;
+      }
+
+      .cls-6 {
+        fill: #faef83;
+      }
+
+      .cls-7 {
+        fill: #ffb480;
+      }
+
+      .cls-2 {
+        stroke: #656160;
+      }
+
+      .cls-8 {
+        fill: #74ccbd;
+      }
+    </style>
+  </defs>
+  <g id="kamera">
+    <path class="cls-5" d="m8.09,177.45h190.62c4.19,0,7.59-3.4,7.59-7.59v-65.17H.5v65.17c0,4.19,3.4,7.59,7.59,7.59Z"/>
+    <path class="cls-3" d="m.5,26.92v76.8h205.8V26.92c0-4.19-3.4-7.59-7.59-7.59H8.09c-4.19,0-7.59,3.4-7.59,7.59Z"/>
+  </g>
+  <g id="cirkel">
+    <circle class="cls-2" cx="103.4" cy="104.69" r="37.24"/>
+    <circle cx="103.4" cy="104.69" r="30.35"/>
+  </g>
+  <g id="refleks">
+    <rect class="cls-3" x="9.7" y="29.45" width="60.06" height="24" rx="1" ry="1"/>
+    <line class="cls-4" x1="15.95" y1="29.18" x2="15.95" y2="53.19"/>
+    <line class="cls-4" x1="22.73" y1="29.45" x2="22.73" y2="53.46"/>
+    <line class="cls-4" x1="28.7" y1="29.05" x2="28.7" y2="53.05"/>
+    <line class="cls-4" x1="35.48" y1="29.32" x2="35.48" y2="53.32"/>
+    <line class="cls-4" x1="42.15" y1="29.72" x2="42.15" y2="53.73"/>
+    <line class="cls-4" x1="49.53" y1="29.86" x2="49.53" y2="53.86"/>
+    <line class="cls-4" x1="56.9" y1="29.45" x2="56.9" y2="53.46"/>
+    <line class="cls-4" x1="63.68" y1="29.72" x2="63.68" y2="53.73"/>
+  </g>
+  <path class="cls-5" d="m149.42.5h22.69c1.1,0,2,.9,2,2v16.84h-26.69V2.5c0-1.1.9-2,2-2Z"/>
+  <rect class="cls-1" x="9.7" y="150.22" width="188.31" height="12.59" rx="2" ry="2"/>
+  <rect class="cls-3" x="53.7" y="148.28" width="100.32" height="108.17"/>
+  <line class="cls-4" x1="53.7" y1="230.84" x2="84.99" y2="194.46"/>
+  <line class="cls-4" x1="147.75" y1="256.46" x2="84.46" y2="194.3"/>
+  <rect x="84.17" y="193.27" width="1.62" height="1.13" transform="translate(161.95 -3.32) rotate(45)"/>
+  <line class="cls-4" x1="111.75" y1="221.1" x2="135.37" y2="188"/>
+  <line class="cls-4" x1="154.26" y1="206.53" x2="134.48" y2="187.96"/>
+  <rect x="134.41" y="187.11" width="1.62" height=".88" transform="translate(172.22 -40.68) rotate(45)"/>
+  <circle class="cls-6" cx="115.91" cy="172.26" r="9.55"/>
+  <g>
+    <ellipse class="cls-7" cx="253.52" cy="158.24" rx="39.78" ry="22.6" transform="translate(-41 107.56) rotate(-22.21)"/>
+    <path class="cls-5" d="m169.33,212.29l15.55-21.62c.12-.17.4-.11.45.1l2.55,15.71,3.54,14.64c.03.19-.32,1.39-.5,1.3l-21.48-9.77c-.14-.07-.19-.24-.11-.36Z"/>
+    <polyline class="cls-8" points="302 172.37 190.91 222.42 184.95 190.63 285.85 139.77"/>
+    <rect class="cls-3" x="287.1" y="137.5" width="36.38" height="25.7" transform="translate(302.15 -189.94) rotate(63.25)"/>
+    <line class="cls-4" x1="201.89" y1="182.09" x2="209.07" y2="214.24"/>
+    <polyline class="cls-8" points="295.18 160.9 207.33 204.12 203.99 191.6 289.14 148.91"/>
+    <ellipse class="cls-7" cx="251.59" cy="199.61" rx="16.71" ry="14.61" transform="translate(19.71 421.81) rotate(-82.21)"/>
+    <path class="cls-7" d="m243.66,213.96l24.8,24.88-7.69,140.72,47.55,5.04,15.05-181.43-.37-.87-17.14-31.87-26.67,13.82,6.84,15.61c.39.89.24,1.92-.39,2.65l-1.7,2c-.8,1.41-2.69,1.72-3.9.64l-15.63-14.09"/>
+  </g>
+</svg>
