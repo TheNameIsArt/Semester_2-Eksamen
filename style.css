@@ -5,9 +5,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #74ccbd82;
-}
 body p {
     font-family: 'Prata', serif;
 }
@@ -33,7 +30,7 @@ header {
 /* ---------------- MENU ----------------  */
 /* menu button */
 .nav-button {
-    position: fixed; /* fixed = er placeret ift. viewpoint aka den forbliver altid på samme sted selv når siden bliver scrolled */
+    position: absolute; /* absolute = er placeret ift sin normale position */
     top: 0.7vh; /* Bruger top og right til at placere elementet */
     right: 0;
     z-index: 10;
@@ -47,7 +44,7 @@ header {
 
 .nav-button::before {
     content: ""; /* Skriver "" i content for at lave en streg */
-    position: absolute; /* absolute = er placeret ift sin normale position */
+    position: absolute; 
     top: -5px; /* Bruger top, left, bottom og right til at flytte elementet */
     left: -5px;
     bottom: -5px;
@@ -78,14 +75,17 @@ header {
     transition: transform 0.4s cubic-bezier(0.75, 0, 0.25, 1), top 0.4s 0.4s cubic-bezier(0.75, 0, 0.25, 1), background 0.2s cubic-bezier(0.75, 0, 0.25, 1);
 }
 
+/* top-placering af øverste streg */
 .nav-button span::before {
     top: 0;
 }
 
+/* top-placering af nederste streg */
 .nav-button span::after {
     top: calc(100% - 2px);
 }
 
+/* gør checkbox usynlig */
 .nav-trigger-input {
     opacity: 0;
     width: 0;
@@ -113,7 +113,7 @@ header {
     transform: rotate(45deg);
 }
 
-.nav-trigger-input:checked + label span::before, .nav-trigger-input:checked + label span::after {
+.nav-trigger-input:checked + label span::after {
     top: calc(50% - 1px);
     transition: transform 0.4s 0.4s cubic-bezier(0.75, 0, 0.25, 1), top 0.4s cubic-bezier(0.75, 0, 0.25, 1), background 0.2s cubic-bezier(0.75, 0, 0.25, 1);
 }
@@ -128,180 +128,443 @@ header {
     transition: 0.5s cubic-bezier(0.75, 0, 0.25, 1);
 }
 
+/* nav list (åben) */
 .nav-list {
     position: fixed;
-    overflow-y: scroll;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: -1;
-    background: white;
-    font-size: 12vw;
+    background: #ffb580;
+    font-size: 8vw;
     padding: 10vh 10vw;
-    transform: translate(130vw) rotate(45deg);
-    transition: 0.2s cubic-bezier(0.75, 0, 0.25, 1);
+    transform: translate(160vw) rotate(45deg);
+    transition: 0.5s cubic-bezier(0.75, 0, 0.25, 1);
 }
 
+/* nav items */
 .nav-item {
     list-style: none;
-}
-  
-.nav-item + .nav-item {
-    margin-top: 3vh;
+    margin-top: 4vh;
 }
 
+/* nav links */
 .nav-link {
     text-decoration: none;
     color: inherit;
 }
 
+/* ---------------- BANNERS ----------------  */
 .banner {
     width: 100%;
     height: 20vh;
-    background-image: url(img/banner.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 1000px #ffb58096;
+    box-shadow: inset 0 0 0 1000px #ffb58094;
+    text-align: center;
 }
 
 .banner-title {
     position: absolute;
     z-index: 2;
-    margin: 2vh 15vw;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 11.5vh;
+    margin: auto;
     font-size: 90px;
+    text-shadow:
+    -1px 0px 0px white,
+    1px 0px 0px white,
+    0px -1px 0px white,
+    0px 1px 0px white;
 }
 
 .banner-txt {
     position: absolute;
     z-index: 2;
     text-align: center;
-    margin: 7vh 15vw;
+    left: 5px;
+    right: 5px;
+    top: 18vh;
     font-size: 50px;
 }
 
 .banner-btn {
     position: absolute;
     z-index: 2;
-    margin: 14vh 40vw;
+    margin: 15vh -9vw;
     padding: 20px;
-    font-size: 50px;
-    background-color: #74CCBD;
-    border-radius: 10%;
-    text-transform: uppercase;
-    color: white;
-}
-
-.headings {
-    text-align: center;
-    font-size: 80px;
-    margin: 2vh 0;
-}
-
-.tutorial {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card {
-    margin: 1.5vh 1.5vw;
-}
-
-.card img {
-    width: 22vw;
-    height: 6vh;
-    border: 2px solid black;
-    background-color: white;
-    border-radius: 10% 10% 0 0;
-}
-
-.card-container {
-    background-color: #74CCBD;
-    width: 22vw;
-    height: 17.5vh;
-    border-radius: 0 0 10% 10%;
-}
-
-.card-container h4 {
     font-size: 30px;
-    padding: 15px;
-}
-
-.card-container p {
-    font-size: 20px;
-    padding: 15px;
-}
-
-.card-btn {
-    position: absolute;
-    z-index: 2;
-    padding: 20px;
-    margin-left: 2vw;
-    font-size: 20px;
-    background-color: #74CCBD;
+    background-color: white;
+    border-radius: 5%;
     text-transform: uppercase;
-    color: white;
+    width: 17vw;
+    border: 2px #74CCBD solid;
 }
 
+.banner-home {
+    background-image: url(img/banner.jpg);
+}
+
+.banner-about {
+    background-image: url(img/about-banner.jpg);
+}
+
+.banner-podcast {
+    background-image: url(img/podcast-banner.jpg);
+}
+
+.banner-tutorial {
+    background-image: url(img/tutorial-banner.jpg);
+}
+
+/* ------------------------ HJEM ------------------------  */
+/* ---------------- INTRO ----------------  */
+.intro {
+    margin: 3vh 5vw;
+    height: 17vh;   
+}
+
+.intro h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+/* ---------------- INFORMATION ----------------  */
 .information {
     display: flex;
     margin: 2vh 0;
 }
 
-.info {
+.information button {
     background-color: #74CCBD;
-    margin: 0 5vw;
+    margin: 0 3vw;
     text-align: center;
     border-radius: 10%;
     padding: 20px;
-    height: 20vh;
+    height: 25vh;
+    width: 50vw;
+}
+
+.info a {
+    color: black;
+    text-decoration: none;
+}
+
+.info h1 {
+    font-size: 40px;
 }
 
 .info h2 {
     font-size: 30px;
+    margin-top: 50px;
 }
 
 .info p {
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 30px;
+    margin-top: 40px;
 }
 
-.info-btn {
-    position: absolute;
-    z-index: 2;
-    padding: 20px;
-    font-size: 20px;
-    margin-left: -6vw;
-    margin-top: 1.5vh;
-    background-color: #ffb480;
-    text-transform: uppercase;
-    color: white;
-}
-
+/* ---------------- PODCAST ----------------  */
 .podcast-banner {
     width: 100%;
-    height: 14vh;
+    height: 20vh;
     background-color: #ffb580;
+    text-align: center;
+    margin-top: 5vh;
 }
 
 .podcast-banner h1 {
     font-size: 70px;
     text-align: center;
-    padding-top: 2vh;
+    padding-top: 4vh;
 }
 
 .podcast-banner-btn {
-    position: absolute;
     z-index: 2;
     padding: 20px;
-    font-size: 50px;
-    margin-left: 42vw;
-    margin-top: 1.5vh;
-    background-color: #74CCBD;
+    font-size: 40px;
+    margin-top: 3vh;
+    background-color: white;
     text-transform: uppercase;
+    width: 17vw;
+    border-radius: 5%;
+    border: 2px #74CCBD solid;
+}
+
+/* ---------------- TUTORIALS OVERSIGT ----------------  */
+.headings {
+    text-align: center;
+    font-size: 70px;
+    margin: 3vh 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    border-top: 1px black solid;
+    background-color: #74CCBD;
+    height: 31vh;
+}
+  
+.slideshow-container img {
+    height: 20vh;
+    width: 100%;
+}
+
+/* hide the images by default */
+.slides {
+    display: none;
+    margin-top: 50px;
+}
+  
+/* next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 25px;
     color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* caption text */
+.text h1 {
+    font-size: 50px;
+    padding: 20px 12px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px black solid;
+    font-weight: 400;  
+    margin-top: 2vh;  
+}
+  
+/* number text */
+.numbertext {
+    font-size: 20px;
+    padding: 8px 20px;
+    top: 0;
+    float: right;
+}
+  
+/* fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* ------------------------ OM OS ------------------------  */
+.om-os h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 1vh;
+}
+
+.om-os p {
+    font-size: 30px;
+    font-weight: 300;
+    padding: 30px;
+    text-align: left;
+}
+
+/* ---------------- ANYA & KASPER----------------  */
+.om-anya, .om-kasper {
+    display: flex;
+    background-color: #ffb580;
+    margin: 2vh 2vw;
     border-radius: 10%;
+    height: 22vh;
+}
+
+.om-anya img, .om-kasper img {
+    height: 22vh;
+    border-radius: 10% 0 0 10%;
+}
+
+/* ---------------- JOE & SURIN ----------------  */
+.om-joe, .om-surin {
+    display: flex;
+    background-color: #74CCBD;
+    margin: 2vh 2vw;
+    border-radius: 10%;
+    height: 22vh;
+}
+
+.om-joe img, .om-surin img {
+    height: 22vh;
+    border-radius: 0 10% 10% 0;
+}
+
+/* ------------------------ PODCAST ------------------------  */
+.podcast h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 1vh;
+}
+
+.podcast p {
+    font-size: 30px;
+    font-weight: 300;
+    padding: 30px;
+    text-align: center;
+}
+
+.podcast audio {
+    width: 100%;
+    padding: 0 2vh;
+    margin-top: 15px;
+}
+
+.one, .three, .five {
+    background-color: #74CCBD;
+    margin: 2vh 0;
+    height: 16vh;
+}
+
+.two, .four {
+    background-color: #ffb580;
+    margin: 2vh 0;
+    height: 16vh;
+}
+
+/* ------------------------ TUTORIALS ------------------------  */
+.tutorials h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 1vh;
+}
+
+.tutorials p {
+    font-size: 30px;
+    font-weight: 300;
+    padding: 30px;
+    text-align: center;
+}
+
+.tutorials video {
+    width: 100%;
+    padding: 0 2vh;
+    margin-top: 15px;
+}
+
+.tutorials form {
+    background-color: #ffb580;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 1vh;
+}
+
+.tutorials button {
+    background-color: #ffb580;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tutorials input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+.illustrator, .photoshop, .figma, .wordpress {
+    background-color: #74CCBD;
+    margin: 2vh 0;
+    height: 37vh;
+}
+
+.indesign, .premirepro, .visualstudio {
+    background-color: #ffb580;
+    margin: 2vh 0;
+    height: 37vh;
+}
+
+
+/* ---------------- FOOTER ----------------  */
+footer {
+    background-color: #ffb580;
+    margin-top: 4vh;
+    padding: 3vh 4vw;
+    display: flex;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    margin-top: 1vh;
+}
+
+footer h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+footer h2 {
+    padding-left: 20px;
+    padding-top: 8px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+footer ul {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 1vh;
+    line-height: 2vh;
+}
+
+footer li {
+    padding-left: 20px;
+}
+
+.bi {
+    font-size: 40px;
+}
+
+.footer-contact, .footer-tutorial, .footer-podcast {
+    width: 33%;
 }
