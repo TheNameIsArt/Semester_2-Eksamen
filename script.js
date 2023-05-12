@@ -1,3 +1,4 @@
+// Carousel 
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -21,6 +22,36 @@ function showSlides(n) {
   }
   
   slides[slideIndex-1].style.display = "block";
-
 }
 
+// Search bar - tutorials
+function search_tut() {
+  let input = document.getElementById('searchbar').value
+  input=input.toLowerCase();
+  let x = document.getElementsByClassName('tuts');
+    
+  for (i = 0; i < x.length; i++) { 
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display="none";
+      }
+      else {
+          x[i].style.display="list-item";                 
+      }
+  }
+}
+
+// Search bar - information
+function search_tut() {
+  let input = document.getElementById('searchbar').value
+  input=input.toLowerCase();
+  let x = document.getElementsByClassName('udd-info');
+    
+  for (i = 0; i < x.length; i++) { 
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display="none";
+      }
+      else {
+          x[i].style.display="list-item";                 
+      }
+  }
+}

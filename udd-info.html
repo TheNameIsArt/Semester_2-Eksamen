@@ -57,7 +57,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="kurser.html" class="nav-link">
+                    <a href="tutorials.html" class="nav-link">
                         <span class="nav-txt">Tutorials</span>
                     </a>
                 </li>
@@ -78,36 +78,288 @@
     </header>
 
     <div class="content">
-        <div class="banner banner-home">
+        <div class="banner banner-information">
             <!-- Banner -->
-            <h1 class="banner-title">Multimediedesigner</h1>
+            <h1 class="banner-title">Information</h1>
             <h2 class="banner-txt">
-                En kort uddannelse med mange muligheder
+                Læs om hvad korte og mellemlange uddannelse er
             </h2>
-        </div>     
+        </div> 
+        
+        <div class="all-info ">
+            <form id="form" role="search"> 
+                <input id="searchbar" onkeyup="search_tut()" type="text" name="search" placeholder="Search..">
+                <button><i class="bi bi-search"></i></button>
+            </form>
+            <div class="hvad udd-info">
+                <h2>Hvad er en kort og mellemlang uddannelse?</h2>
+                <p>
+                    I Danmark skelner vi mellem korte, mellemlange og lange videregående uddannelser. Det vi hører mest om, er de lange uddannelser, altså universitetet. Men der findes som sagt også korte og mellemlange uddannelser.
+                </p>
+                <p>
+                    En kort uddannelse er typisk 1,5 - 2,5 år, og høres tit som det vi kalder en erhvervsakademiuddannelse. Der findes mange typer af korte uddannelser, og du kan læse om dem alle her.
+                </p>
+                <p>
+                    En mellemlang uddannelse er typisk 3 - 3,5 år, og høres tit som det vi kalder en professionsbachelor. Der findes mange typer af korte uddannelser, og du kan læse om dem alle her.
+                </p>
+                <p>
+                    Der udover har vi top-ups. Top-ups kan tages efter sin erhvervsakademiuddannelse og sammensat svarer de til en professionsbachelor.
+                </p>
+            </div>
+
+            <div class="cphbusiness udd-info">
+                <h2>CphBusiness</h2>
+                <p>
+                    CphBusiness er et erhvervsakademi som har én afdeling i Kongens Lyngby, tre i København, to i Hillerød og én på Bornholm. På CphBusiness kan du tage du tage en erhvervsakademiuddannelse og en top-up. 
+                </p>
+                <p>
+                    Her under kan du se en liste over hvilke uddannelser du kan tage og hvor.
+                </p>
+                <p>
+                    <b>Erhvervsakademiuddannelse:</b>
+                    <br>
+                    <ul>
+                        <li>Datamatiker (2,5 år) - <em>Lyngby og Bornholm</em></li>
+
+                        <li>Financial controller (2 år) - <em>København (City) og Hillerød</em></li>
+
+                        <li>Finansøkonom (2 år) - <em>København (City), Hillerød, Bornholm og online</em></li>
+
+                        <li>Handelsøkonom (2 år) - <em>København (Søerne) og Hillerød</em></li>
+
+                        <li>Laborant (2,5 år) - <em>Hillerød (Laboratorie og miljø)</em></li>
+
+                        <li>Logistikøkonom (2 år) - <em>København (Søerne)</em></li>
+
+                        <li>Markedsføringsøkonom (2 år) - <em>København (Søerne), Lyngby, Hillerød og online</em></li>
+
+                        <li>Miljøteknolog (2 år) - <em>Hillerød (Laboratorie og miljø)</em></li>
+
+                        <li>Multimediedesigner (2 år) - <em>Lyngby</em></li>
+
+                        <li>Serviceøkonom (2 år) - <em>København (Søerne), Hillerød, Bornholm og online</em></li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Top-ups / Professionsbachelor:</b>
+                    <br>
+                    <ul>
+                        <li>Dataanalyse (1,5 år) - <em>Lyngby</em></li>
+
+                        <li>E-handel (1,5 år) - <em>København (Søerne)</em></li>
+
+                        <li>Finansbachelor (3,5 år) - <em>København (City)</em></li>
+
+                        <li>Innovation og entrepreneurship (1,5 år) - <em>Lyngby og Bornholm</em></li>
+
+                        <li>International handel og markedsføring (1,5 år) - <em>København (Søerne)</em></li>
+
+                        <li>International hospitality management (1,5 år) - <em>København (Søerne)</em></li>
+
+                        <li>Softwareudvikling (1,5 år) - <em>Lyngby</em></li>
+
+                        <li>Sportsmanagement (1,5 år) - <em>Lyngby</em></li>
+
+                        <li>Webudvikling (1,5 år) - <em>Lyngby</em></li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- KEA -->
+            <div class="kea udd-info">
+                <h2>KEA</h2>
+                <p>
+                    KEA er et erhvervsakademi som har én afdeling i Hellerup, tre i København, og én i Hillerød. På KEA kan du tage du tage en erhvervsakademiuddannelse, en top-up og en professionsbachelor.
+                </p>
+                <p>
+                    Her under kan du se en liste over hvilke uddannelser du kan tage og hvor.
+                </p>
+                <p>
+                    <b>Erhvervsakademiuddannelse:</b>
+                    <br>
+                    <ul>
+                        <li>Automationsteknolog (2 år) - <em>København (Lygten)</em></li>
+
+                        <li>Byggekoordinator (2 år) - <em>København (Prinsesse Charlottes gade)</em></li>
+
+                        <li>Byggetekniker (2 år) - <em>København (Prinsesse Charlottes gade) og Hillerød</em></li>
+
+                        <li>Datamatiker (2,5 år) - <em>København (Guldbersgade)</em></li>
+
+                        <li>Designteknolog (2 år) - <em>København (Guldbersgade)</em></li>
+
+                        <li>Entreprenørskab og design (2 år) - <em>København (Guldbersgade)</em></li>
+
+                        <li>EL-installatør (2 år) - <em>København (Lygten)</em></li>
+
+                        <li>Energiteknolog (2 år) - <em>København (Lygten)</em></li>
+
+                        <li>IT-teknolog (2 år) - <em>København (Guldbersgade)</em></li>
+
+                        <li>Kort- og landmålingstekniker (2 år) - <em>København (Prinsesse Charlottes gade)</em></li>
+
+                        <li>Multimediedesigner (2 år) - <em>København (Guldbersgade)</em></li>
+
+                        <li>Produktionsteknolog (2 år) - <em>København (Lygten)</em></li>
+
+                        <li>VVS-installatør (2 år) - <em>København (Lygten)</em></li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Top-ups:</b>
+                    <br>
+                    <ul>
+                        <li>Design og business (1,5 år) - <em>København (Guldbersgade)</em></li>
+
+                        <li>Digital konceptudvikling (1,5 år) - <em>København (Guldbersgade)</em></li>
+
+                        <li>Energimanagement (1,5 år) - <em>København (Lygten)</em></li>
+
+                        <li>IT-sikkerhed (1,5 år) - <em>København (Guldbersgade)</em></li>
+
+                        <li>Produktudvikling og teknisk integration (1,5 år) - <em>København (Lygten)</em></li>
+
+                        <li>Softwareudvikling (1,5 år) - <em>København (Guldbersgade)</em></li>
+
+                        <li>Webudvikling (1,5 år) - <em>København (Guldbersgade)</em></li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Professionsbachelor:</b>
+                    <br>
+                    <ul>
+                        <li>Bygningskonstuktør (3,5 år) - <em>København (Prinsesse Charlottes gade) og Hillerød</em></li>
+
+                        <li>IT-arkitektur (3,5 år) - <em>København (Guldbersgade)</em></li>
+
+                        <li>Optometri (3,5 år) - <em>København (Guldbersgade)</em></li>
+
+                        <li>Smykker, teknologi og business (3,5 år) - <em>København (Guldbersgade)</em></li>
+
+                        <li>Økonomi og IT (3,5 år) - <em>København (Guldbersgade)</em></li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- Zealand -->
+            <div class="zealand udd-info">
+                <h2>Zealand</h2>
+                <p>
+                    Zealand er et erhvervsakademi som har én afdeling i Køge. På Zealand kan du tage du tage en erhvervsakademiuddannelse, en top-up og en professionsbachelor.
+                </p>
+                <p>
+                    Her under kan du se en liste over hvilke uddannelser du kan tage.
+                </p>
+                <p>
+                    <b>Erhvervsakademiuddannelse:</b>
+                    <br>
+                    <ul>
+                        <li>Administrationsøkonom (2 år)</li>
+
+                        <li>Autoteknolog (2 år)</li>
+
+                        <li>Datamatiker (2,5 år)</li>
+
+                        <li>Datamatiker - Autismeholdet (2,5 år)</li>
+
+                        <li>EL-installatør (2 år)</li>
+
+                        <li>Finansøkonom (2 år)</li>
+
+                        <li>Handelsøkonom (2 år)</li>
+
+                        <li>Markedsføringsøkonom (2 år) - <em>København (Lygten)</em></li>
+
+                        <li>Markedsføringsøkonom - Blended Learning (2 år)</li>
+
+                        <li>Multimediedesigner (2 år)</li>
+
+                        <li>Serviceøkonom (2 år)</li>
+
+                        <li>Serviceøkonom - Blended Learning (2 år)</li>
+
+                        <li>Procesteknolog (2 år)</li>
+
+                        <li>Laborant (2,5 år)</li>
+
+                        <li>Logistikøkonom (2 år)</li>
+
+                        <li>Jordbrugsteknolog (2 år)</li>
+
+                        <li>Produktionsteknolog (2 år)</li>
+
+                        <li>VVS-installatør (2 år)</li>
+
+                        <li>Byggetekniker (2 år)</li>
+
+                        <li>IT-teknolog (2 år)</li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Top-ups:</b>
+                    <br>
+                    <ul>
+                        <li>Innovation og entrepreneurship (1,5 år)</li>
+
+                        <li>IT-sikkerhed (1,5 år)</li>
+
+                        <li>International handel og markedsføring (1,5 år)</li>
+
+                        <li>Digital konceptudvikling (1,5 år)</li>
+
+                        <li>Jordbrug - Blended Learning (1,5 år)</li>
+
+                        <li>Webudvikling (1,5 år)</li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Professionsbachelor:</b>
+                    <br>
+                    <ul>
+                        <li>Event management og økonomi (3,5 år)</li>
+
+                        <li>Økonomi og IT (3,5 år)</li>
+
+                        <li>Finansbachelor (3,5 år)</li>
+
+                        <li>Bygningskonstuktør (3,5 år)</li>
+
+                        <li>Bygningskonstuktør - Blended Learning (3,5 år)</li>
+
+                        <li>Urban landskabsingeniør (4 år)</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
     </div>
     
     <footer>
         <div class="footer-contact">
-            <h1>Kontakt information</h1>
+            <h2>Kontakt</h2>
             <a href="#">
                 <i class="bi bi-envelope-at"></i>
-                <h2>lørnify@gmail.com</h2>
+                <p>lørnify@gmail.com</p>
             </a>
 
             <a href="#">
                 <i class="bi bi-telephone"></i>
-                <h2>+45 42 06 94 20</h2>
+                <p>+45 42 06 94 20</p>
             </a>
 
             <a href="#">
                 <i class="bi bi-geo-alt"></i>
-                <h2>Kongens Lyngby</h2>
+                <p>Kongens Lyngby</p>
+            </a>
+
+            <a href="#">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
             </a>
         </div>
 
         <div class="footer-tutorial">
-            <h1>Tutorials</h1>
+            <h2>Tutorials</h2>
             <ul>
                 <li>Adobe Illustrator</li>
                 <li>Adobe InDesign</li>
@@ -120,7 +372,7 @@
         </div>
 
         <div class="footer-podcast">
-            <h1>Podcasts</h1>
+            <h2>Podcasts</h2>
             <ul>
                 <li>Korte og mellemlange uddannelser</li>
                 <li>Kommunikation og marketing</li>

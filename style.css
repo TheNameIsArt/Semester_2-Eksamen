@@ -5,8 +5,22 @@
     box-sizing: border-box;
 }
 
-body p {
+body h1 {
+    font-size: 70px;
+}
+
+body h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+body h3 {
+    font-size: 40px;
+}
+
+body p{
     font-family: 'Prata', serif;
+    font-size: 30px;
 }
 
 header {
@@ -204,35 +218,40 @@ header {
     background-image: url(img/banner.jpg);
 }
 
-.banner-about {
-    background-image: url(img/about-banner.jpg);
+.banner-information {
+    background-image: url(img/information-banner.jpg)
 }
 
-.banner-podcast {
-    background-image: url(img/podcast-banner.jpg);
+.banner-multimedie {
+    background-image: url(img/multimedie-banner.jpg);
 }
 
 .banner-tutorial {
     background-image: url(img/tutorial-banner.jpg);
 }
 
+.banner-podcast {
+    background-image: url(img/podcast-banner.jpg);
+}
+
+.banner-about {
+    background-image: url(img/about-banner.jpg);
+}
+
 /* ------------------------ HJEM ------------------------  */
-/* ---------------- INTRO ----------------  */
+/* --------- INTRO ---------  */
 .intro {
     margin: 3vh 5vw;
     height: 17vh;   
 }
 
 .intro h1 {
-    font-size: 70px;
     text-align: center;
 }
 
 .intro p {
-    font-size: 30px;
     margin-top: 50px;
     text-align: center;
-
 }
 
 /* ---------------- INFORMATION ----------------  */
@@ -243,7 +262,7 @@ header {
 
 .information button {
     background-color: #74CCBD;
-    margin: 0 3vw;
+    margin: 0 2vw;
     text-align: center;
     border-radius: 10%;
     padding: 20px;
@@ -256,21 +275,15 @@ header {
     text-decoration: none;
 }
 
-.info h1 {
-    font-size: 40px;
-}
-
-.info h2 {
-    font-size: 30px;
+.info h3 {
     margin-top: 50px;
 }
 
 .info p {
-    font-size: 30px;
     margin-top: 40px;
 }
 
-/* ---------------- PODCAST ----------------  */
+/* --------- PODCAST --------- */
 .podcast-banner {
     width: 100%;
     height: 20vh;
@@ -280,7 +293,6 @@ header {
 }
 
 .podcast-banner h1 {
-    font-size: 70px;
     text-align: center;
     padding-top: 4vh;
 }
@@ -297,7 +309,7 @@ header {
     border: 2px #74CCBD solid;
 }
 
-/* ---------------- TUTORIALS OVERSIGT ----------------  */
+/* ---------  TUTORIALS OVERSIGT ---------  */
 .headings {
     text-align: center;
     font-size: 70px;
@@ -347,13 +359,11 @@ header {
 
 
 /* caption text */
-.text h1 {
-    font-size: 50px;
+.text h2 {
     padding: 20px 12px;
     position: absolute;
     width: 100%;
     text-align: center;
-    font-weight: 400; 
     margin-top: 2vh; 
 }
   
@@ -376,22 +386,22 @@ header {
     to {opacity: 1}
 }
 
+
+
 /* ------------------------ OM OS ------------------------  */
 .om-os h2 {
     width: 100%;
     text-align: center;
-    font-size: 40px;
     margin-top: 1vh;
 }
 
 .om-os p {
-    font-size: 30px;
     font-weight: 300;
     padding: 30px;
     text-align: left;
 }
 
-/* ---------------- ANYA & KASPER----------------  */
+/* --------- ANYA & KASPER ---------   */
 .om-anya, .om-kasper {
     display: flex;
     background-color: #ffb580;
@@ -405,7 +415,7 @@ header {
     border-radius: 50px 0 0 50px;
 }
 
-/* ---------------- JOE & SURIN ----------------  */
+/* ---------  JOE & SURIN ---------  */
 .om-joe, .om-surin {
     display: flex;
     background-color: #74CCBD;
@@ -419,16 +429,16 @@ header {
     border-radius: 0 50px 50px 0;
 }
 
+
+
 /* ------------------------ PODCAST ------------------------  */
 .podcast h2 {
     width: 100%;
     text-align: center;
-    font-size: 40px;
     padding-top: 1vh;
 }
 
 .podcast p {
-    font-size: 30px;
     font-weight: 300;
     padding: 30px;
     text-align: center;
@@ -442,26 +452,28 @@ header {
 
 .one, .three, .five {
     background-color: #74CCBD;
-    margin: 2vh 0;
+    margin: 2vh 2vw;
     height: 17vh;
+    border-radius: 50px;
 }
 
 .two, .four {
     background-color: #ffb580;
-    margin: 2vh 0;
+    margin: 2vh 2vw;
     height: 17vh;
+    border-radius: 50px;
 }
+
+
 
 /* ------------------------ TUTORIALS ------------------------  */
 .tutorials h2 {
     width: 100%;
     text-align: center;
-    font-size: 40px;
     padding-top: 1vh;
 }
 
 .tutorials p {
-    font-size: 30px;
     font-weight: 300;
     padding: 30px;
     text-align: center;
@@ -476,18 +488,18 @@ header {
 .tutorials form {
     background-color: #ffb580;
     width: 300px;
-    height: 44px;
+    height: 50px;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 35%;
-    margin-top: 1vh;
+    margin-top: 2vh;
 }
 
 .tutorials button {
     background-color: #ffb580;
-    height: 44px;
+    height: 50px;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -496,8 +508,7 @@ header {
 
 .tutorials input {
     all: unset;
-    font: 16px system-ui;
-    color: #fff;
+    font: 30px;
     height: 100%;
     width: 100%;
     padding: 6px 10px;
@@ -505,22 +516,123 @@ header {
 
 .illustrator, .photoshop, .figma, .wordpress {
     background-color: #74CCBD;
-    margin: 2vh 0;
+    margin: 2vh 2vw;
     height: 37vh;
+    border-radius: 50px;
 }
 
 .indesign, .premirepro, .visualstudio {
     background-color: #ffb580;
-    margin: 2vh 0;
+    margin: 2vh 2vw;
     height: 37vh;
+    border-radius: 50px;
 }
+
+
+
+/* ------------------------ INFORMATION ------------------------  */
+.all-info {
+    width: 100%;
+    padding-top: 1vh;
+}
+
+.all-info h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 1vh;
+}
+
+.all-info p {
+    padding: 2vh 2vw 0;
+}
+
+.all-info ul {
+    margin-left: 20px;
+    padding: 0 3vw;
+}
+
+.all-info li, .all-info em {
+    font-family: 'Prata', serif;
+    font-size: 30px;
+    line-height: 2.5vh;
+}
+
+.all-info form {
+    background-color: #74CCBD;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 2vh;
+}
+
+.all-info button {
+    background-color: #74CCBD;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.all-info input {
+    all: unset;
+    font: 30px;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+.hvad {
+    background-color: #ffb580;
+    margin: 2vh 2vw;
+    height: 41vh;
+    border-radius: 50px;
+}
+
+.cphbusiness {
+    background-color: #74CCBD;
+    margin: 2vh 2vw;
+    height: 91vh;
+    border-radius: 50px;
+}
+
+.kea {
+    background-color: #ffb580;
+    margin: 2vh 2vw;
+    height: 110vh;
+    border-radius: 50px;
+}
+
+.zealand {
+    background-color: #74CCBD;
+    margin: 2vh 2vw;
+    height: 113vh;
+    border-radius: 50px;
+}
+
+
+
+/* ------------------------ MULTIMEDIEDESIGNER ------------------------  */
+
+
+
+
+
+
+
+
+
 
 
 /* ---------------- FOOTER ----------------  */
 footer {
     background-color: #ffb580;
     margin-top: 4vh;
-    padding: 3vh 4vw;
+    padding: 3vh 2vw;
     display: flex;
 }
 
@@ -531,17 +643,14 @@ footer a {
     margin-top: 1vh;
 }
 
-footer h1 {
+footer h2 {
     text-align: center;
-    font-size: 40px;
     margin-bottom: 20px;
 }
 
-footer h2 {
+footer p {
     padding-left: 20px;
     padding-top: 8px;
-    font-size: 25px;
-    font-weight: 400;
 }
 
 footer ul {
@@ -549,6 +658,8 @@ footer ul {
     font-weight: 400;
     margin-top: 1vh;
     line-height: 2vh;
+    font-family: 'Prata', serif;
+    font-size: 30px;
 }
 
 footer li {
@@ -557,6 +668,14 @@ footer li {
 
 .bi {
     font-size: 40px;
+}
+
+.bi-instagram{
+    padding: 50px;
+}
+
+.bi-facebook, .bi-youtube {
+    padding: 50px 20px;
 }
 
 .footer-contact, .footer-tutorial, .footer-podcast {
