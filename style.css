@@ -139,7 +139,7 @@ header {
     background: #ffb580;
     font-size: 8vw;
     padding: 10vh 10vw;
-    transform: translate(160vw) rotate(45deg);
+    transform: translate(170vw) rotate(45deg);
     transition: 0.5s cubic-bezier(0.75, 0, 0.25, 1);
 }
 
@@ -162,7 +162,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 1000px #ffb58094;
+    box-shadow: inset 0 0 0 1000px #ffb580b5;
     text-align: center;
 }
 
@@ -172,22 +172,17 @@ header {
     text-align: center;
     left: 0;
     right: 0;
-    top: 11.5vh;
+    top: 12vh;
     margin: auto;
     font-size: 90px;
-    text-shadow:
-    -1px 0px 0px white,
-    1px 0px 0px white,
-    0px -1px 0px white,
-    0px 1px 0px white;
 }
 
 .banner-txt {
     position: absolute;
     z-index: 2;
     text-align: center;
-    left: 5px;
-    right: 5px;
+    left: 6px;
+    right: 6px;
     top: 18vh;
     font-size: 50px;
 }
@@ -281,7 +276,7 @@ header {
     height: 20vh;
     background-color: #ffb580;
     text-align: center;
-    margin-top: 5vh;
+    margin-top:4vh;
 }
 
 .podcast-banner h1 {
@@ -306,16 +301,15 @@ header {
 .headings {
     text-align: center;
     font-size: 70px;
-    margin: 3vh 0;
+    padding-top: 2vh;
+    margin-top: 4vh;
 }
 
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    margin: auto;
-    border-top: 1px black solid;
     background-color: #74CCBD;
-    height: 31vh;
+    height: 37vh;
 }
   
 .slideshow-container img {
@@ -351,6 +345,7 @@ header {
     border-radius: 3px 0 0 3px;
 }
 
+
 /* caption text */
 .text h1 {
     font-size: 50px;
@@ -358,9 +353,8 @@ header {
     position: absolute;
     width: 100%;
     text-align: center;
-    border-bottom: 1px black solid;
-    font-weight: 400;  
-    margin-top: 2vh;  
+    font-weight: 400; 
+    margin-top: 2vh; 
 }
   
 /* number text */
@@ -402,13 +396,13 @@ header {
     display: flex;
     background-color: #ffb580;
     margin: 2vh 2vw;
-    border-radius: 10%;
-    height: 22vh;
+    height: 25vh;
+    border-radius: 50px;
 }
 
 .om-anya img, .om-kasper img {
-    height: 22vh;
-    border-radius: 10% 0 0 10%;
+    height: 25vh;
+    border-radius: 50px 0 0 50px;
 }
 
 /* ---------------- JOE & SURIN ----------------  */
@@ -416,13 +410,13 @@ header {
     display: flex;
     background-color: #74CCBD;
     margin: 2vh 2vw;
-    border-radius: 10%;
-    height: 22vh;
+    border-radius: 50px;
+    height: 25vh;
 }
 
 .om-joe img, .om-surin img {
-    height: 22vh;
-    border-radius: 0 10% 10% 0;
+    height: 25vh;
+    border-radius: 0 50px 50px 0;
 }
 
 /* ------------------------ PODCAST ------------------------  */
@@ -449,13 +443,13 @@ header {
 .one, .three, .five {
     background-color: #74CCBD;
     margin: 2vh 0;
-    height: 16vh;
+    height: 17vh;
 }
 
 .two, .four {
     background-color: #ffb580;
     margin: 2vh 0;
-    height: 16vh;
+    height: 17vh;
 }
 
 /* ------------------------ TUTORIALS ------------------------  */
