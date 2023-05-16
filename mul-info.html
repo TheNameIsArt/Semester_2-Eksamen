@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="dk" translate="no">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lørnify - Om os</title>
+    <title>Lørnify - Hvad er Multimediedesign?</title>
+    <meta name="description" content="Få information om hvad korte og mellemlange uddannelser er og find hvor på Sjælland du kan tage dem. Se tutorials til Multimediedesignuddannelsen.">
 
+    <meta name="og:title" property="og:title" content="Lørnify - Lær om korte og mellemlange uddannelser, samt om multimediedesignuddannelsen">
     <!-- CSS Import -->
     <link rel="stylesheet" href="style.css">
 
@@ -23,7 +25,8 @@
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    
+
+
 </head>
 
 <body>
@@ -75,17 +78,66 @@
     </header>
 
     <div class="content">
-        <div class="banner banner-multimedie">
+        <div class="banner banner-information">
             <!-- Banner -->
             <h1 class="banner-title">Multimediedesigner</h1>
             <h2 class="banner-txt">
                 En kort uddannelse med mange muligheder
             </h2>
-        </div>   
+        </div> 
+        
+        <div class="all-mul-info">
+            <form id="form" role="search"> 
+                <input id="searchbar" onkeyup="search_mul()" type="text" name="search" placeholder="Search..">
+                <button><i class="bi bi-search"></i></button>
+            </form>
 
+            <div class="hvad-mul mul-info">
+                <img src="img/hvad-mul.jpg" alt="Billede af skrivebord med computer, telefon, kaffekop og vandflaske">
+                <h2>Hvad er en multimediedesigner?
+                    <p>
+                        Multimediedesigner er en 2-årig kort videregående uddannelse i udvikling af multimedie-produktioner. I uddannelsen kommer du til at arbejde med billedebehandling og redigering, webdesign, UX/UI design, videoredigering og grafisk design.
+                    </p>
+                </h2>
+            </div>
 
+            <div class="forvent-mul mul-info">
+                <h2>Hvad kan du forvente?
+                    <p>
+                        Du kan forvente at arbejde meget med mange forskellige progammer som f.eks. Adobe, som du får gratis adgang til gennem uddannelsen. Du kommer bl.a. til at arbejde med Photoshop, Premiere Pro, Illustrator, Indesign, Figma, HTML og CSS, Visual Studio Code, WordPress og MAMP.
+                    </p>
+                </h2>
+                <img src="img/mul-forvent.jpg" alt="Billede af af en der bruger photoshop">
+            </div>
+
+            <div class="sem-mul mul-info">
+                <h2>Hvordan ser semesterne ud?
+                    <p>
+                        Uddannelsen er delt op i 4 semestre som hver ender med en eller to eksamener. På 1. semester bliver du introduceret til hvad det betyder at være multimediedesigner og de relevante programmer. 2. semester forbereder dig på at skulle vælge et linjefag på 3. semester, og du bliver derfor introduceret til de forskellige kompetencer man lærer på de forskellige linjer. På 3. semester kommer du ud på dit linjefag samt vælger et valgfag. På 4. semester skal du i praktik og arbejde på din afsluttende eksamen.
+                    </p>
+                </h2>
+            </div>
+
+            <div class="karriere-mul mul-info">
+                <h2>Hvad er karrieremulighederne?
+                    <p>
+                        Der findes mange karrieremuligheder som du kan tage efter du er blevet færdig med uddannelsen. Det kan f.eks. være:
+                        <ul>
+                            <li>Filmdirektør</li>
+                            <li>Videoredigerer</li>
+                            <li>Hjemmesidedesigner</li>
+                            <li>Grafisk designer</li>
+                            <li>UX designer</li>
+                            <li>Billedbehandler</li>
+                            <li>Logo designer</li>
+                        </ul>
+                    </p>
+                </h2>
+            </div>
+   
+        </div>
     </div>
-
+    
     <footer>
         <div class="footer-contact">
             <h2>Kontakt</h2>
@@ -135,9 +187,11 @@
             </ul>
         </div>
     </footer>
-</body>
 
-<!-- JavaScript Import -->
-<script src="script.js"></script>
+
+
+    <!-- JavaScript Import -->
+    <script src="script.js"></script>
+</body>
 
 </html>
