@@ -1001,7 +1001,7 @@ body p {
     /* ---------------- INFORMATION ----------------  */
     .information {
         display: flex;
-        margin-top: 15vh;
+        margin-top: 30vh;
     }
     
     .information button {
@@ -1029,7 +1029,7 @@ body p {
         height: 70vh;
         background-color: #ffb580;
         text-align: center;
-        margin-top: 15vh;
+        margin-top: 30vh;
     }
     
     .podcast-banner h1 {
@@ -1054,7 +1054,7 @@ body p {
         text-align: center;
         font-size: 4vw;
         padding-top: 5vh;
-        margin-top: 15vh;
+        margin-top: 30vh;
     }
     
     /* Slideshow container */
