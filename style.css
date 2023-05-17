@@ -468,10 +468,11 @@ body p {
         text-align: center;
     }
     
-    .tutorials video {
+    .tutorials iframe {
         width: 100%;
-        padding: 0 2vh;
+        padding: 0 5vw;
         margin-top: .2vh;
+        height: 23vh;
     }
     
     .tutorials form {
@@ -505,7 +506,7 @@ body p {
     .illustrator, .photoshop, .figma, .wordpress {
         background-color: #74CCBD;
         margin: 2vh 2vw;
-        height: 37vh;
+        height: 38vh;
         border-radius: 50px;
     }
     
@@ -984,7 +985,7 @@ body p {
     /* ------------------------ HJEM ------------------------  */
     /* --------- INTRO ---------  */
     .intro {
-        margin: 5vh 20vw;
+        margin: 10vh 20vw;
         height: 17vh;   
     }
     
@@ -1000,7 +1001,7 @@ body p {
     /* ---------------- INFORMATION ----------------  */
     .information {
         display: flex;
-        margin-top: 30vh;
+        margin-top: 15vh;
     }
     
     .information button {
@@ -1028,7 +1029,7 @@ body p {
         height: 70vh;
         background-color: #ffb580;
         text-align: center;
-        margin-top: 30vh;
+        margin-top: 15vh;
     }
     
     .podcast-banner h1 {
@@ -1052,8 +1053,8 @@ body p {
     .headings {
         text-align: center;
         font-size: 4vw;
-        padding-top: 2vh;
-        margin-top: 30vh;
+        padding-top: 5vh;
+        margin-top: 15vh;
     }
     
     /* Slideshow container */
@@ -1215,7 +1216,7 @@ body p {
         text-align: center;
     }
     
-    .tutorials video {
+    .tutorials iframe {
         width: 100%;
         padding: 0 2vw;
         margin-top: .2vh;
