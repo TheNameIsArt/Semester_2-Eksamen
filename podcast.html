@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lørnify - Om os</title>
+    <!-- Titel -->
+    <title>Lørnify - Hvad er Multimediedesign?</title>
+    <!-- Beskrivelse - SEO -->
+    <meta name="description" content="Få information om hvad korte og mellemlange uddannelser er og find hvor på Sjælland du kan tage dem. Se tutorials til Multimediedesignuddannelsen.">
+
+    <!-- Titel til SoMe - SEO -->
+    <meta name="og:title" property="og:title" content="Lørnify - Lær om korte og mellemlange uddannelser, samt om multimediedesignuddannelsen">
 
     <!-- CSS Import -->
     <link rel="stylesheet" href="style.css">
@@ -23,23 +29,30 @@
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    
 </head>
 
 <body>
+    <!-- Scroll til toppen knap -->
+    <button onclick="topFunction()" id="topBtn"><i class="bi bi-arrow-up-circle-fill"></i></button>
+    
+    <!-- Header -->
     <header>
+        <!-- Logo -->
         <div class="logo">
             <a href="home.html"><h1>Lørnify</h1></a>
         </div>
 
+        <!-- Navigation -->
         <nav class="nav">
-            <!-- trigger laves som checkbox -->
+            <!-- Laver en trigger som en checkbox -->
             <input class="nav-trigger-input" type="checkbox" id="trigger" aria-label="open the navigation"/>
 
+            <!-- En knap til vores trigger -->
             <label class="nav-button" for="trigger">
                 <span></span>
             </label>
 
+            <!-- En liste med navigations menuen -->
             <ul class="nav-list">
                 <li class="nav-item">
                     <a href="udd-info.html" class="nav-link">
@@ -74,18 +87,20 @@
         </nav>
     </header>
 
+    <!-- Alt vores indhold -->
     <div class="content">
+        <!-- Banner -->
         <div class="banner banner-podcast">
-            <!-- Banner -->
             <h1 class="banner-title">Podcasts</h1>
             <h2 class="banner-txt">
                 Her taler vi om de vigtigeste ting omkring multimediedesignuddannelsen
             </h2>
         </div>   
 
+        <!-- Podcasts -->
         <div class="podcast">
             <!-- #1 -->
-            <div class="one">
+            <div class="one" id="one">
                 <h2>#1 Korte og mellemlange uddannelser</h2>
                 <p>
                     I denne episode, taler vi om hvad du kan forvente i en erhvervsakademiuddannelse og hvilke muligheder du har efter.
@@ -96,7 +111,7 @@
             </div>
 
             <!-- #2 -->
-            <div class="two">
+            <div class="two" id="two">
                 <h2>#2 Kommunikation og Marketing</h2>
                 <p>
                     I denne episode, taler vi om hvilke faglige kommunikation -og marketinginformation du skal være opmærksom på under uddannelsen.
@@ -107,7 +122,7 @@
             </div>
 
             <!-- #3 -->
-            <div class="three">
+            <div class="three" id="three">
                 <h2>#3 Videoproduktion</h2>
                 <p>
                     I denne episode, taler vi om hvad du kan forvente ift. videoproduktion og hvilke opgaver man kan løse ved brug af Premiere Pro.
@@ -118,7 +133,7 @@
             </div>
 
             <!-- #4 -->
-            <div class="four">
+            <div class="four" id="four">
                 <h2>#4 UX og UI</h2>
                 <p>
                     I denne episode, taler vi om hvad du kan forvente ved UX-design (User Experience) og UI-design (User Interface) i uddannelsen.
@@ -129,7 +144,7 @@
             </div>
 
             <!-- #5 -->
-            <div class="five">
+            <div class="five" id="five">
                 <h2>#5 Job- og karrieremuligheder</h2>
                 <p>
                     I denne episode, taler vi hvilke job- og karrieremuligheder du får har ved at tage en erhvervsakademiuddannelse i multimediadesign.
@@ -141,7 +156,9 @@
         </div>
     </div>
 
-    <footer>
+    <!-- Footer -->
+     <footer>
+        <!-- Kontakt -->
         <div class="footer-contact">
             <h2>Kontakt</h2>
             <a href="#">
@@ -166,33 +183,69 @@
             </a>
         </div>
 
+        <!-- Tutorials -->
         <div class="footer-tutorial">
             <h2>Tutorials</h2>
             <ul>
-                <li>Adobe Illustrator</li>
-                <li>Adobe InDesign</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe PremirePro</li>
-                <li>Figma / FigJam</li>
-                <li>Visual Studio Code</li>
-                <li>WordPress og MAMP</li>
+                <li>
+                    <a href="tutorials.html#illustrator">Adobe Illustrator</a>
+                </li>
+
+                <li>
+                    <a href="tutorials.html#indesign">Adobe InDesign</a>
+                </li>
+
+                <li>
+                    <a href="tutorials.html#photoshop">Adobe Photoshop</a>
+                </li>
+
+                <li>
+                    <a href="tutorials.html#premirepro">Adobe PremierePro</a>
+                </li>
+
+                <li>
+                    <a href="tutorials.html#figma">Figma / FigJam</a>
+                </li>
+
+                <li>
+                    <a href="tutorials.html#visualstudio">Visual Studio Code</a>
+                </li>
+
+                <li>
+                    <a href="tutorials.html#wordpress">WordPress og MAMP</a>
+                </li>
             </ul>
         </div>
 
+        <!-- Podcasts -->
         <div class="footer-podcast">
             <h2>Podcasts</h2>
             <ul>
-                <li>Korte og mellemlange uddannelser</li>
-                <li>Kommunikation og marketing</li>
-                <li>Videoproduktion</li>
-                <li>UX og UI</li>
-                <li>Job- og karrieremuligheder</li>
+                <li>
+                    <a href="podcast.html#one">Korte og mellemlange uddannelser</a>
+                </li>
+
+                <li>
+                    <a href="podcast.html#two">Kommunikation og marketing</a>
+                </li>
+
+                <li>
+                    <a href="podcast.html#three">Videoproduktion</a>
+                </li>
+
+                <li>
+                    <a href="podcast.html#four">UX og UI</a>
+                </li>
+
+                <li>
+                    <a href="podcast.html#five">Job- og karrieremuligheder</a>
+                </li>
             </ul>
         </div>
     </footer>
-</body>
 
-<!-- JavaScript Import -->
-<script src="script.js"></script>
+    <!-- JavaScript Import -->
+    <script src="script.js"></script>
+</body>
 
 </html>
