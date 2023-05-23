@@ -6,13 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Titel -->
-    <title>Lørnify - Hvad er Multimediedesign?</title>
-    <!-- Beskrivelse - SEO -->
-    <meta name="description" content="Få information om hvad korte og mellemlange uddannelser er og find hvor på Sjælland du kan tage dem. Se tutorials til Multimediedesignuddannelsen.">
-
-    <!-- Titel til SoMe - SEO -->
-    <meta name="og:title" property="og:title" content="Lørnify - Lær om korte og mellemlange uddannelser, samt om multimediedesignuddannelsen">
+    <title>Lørnify - Om os</title>
 
     <!-- CSS Import -->
     <link rel="stylesheet" href="style.css">
@@ -29,30 +23,23 @@
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
 </head>
 
 <body>
-    <!-- Scroll til toppen knap -->
-    <button onclick="topFunction()" id="topBtn"><i class="bi bi-arrow-up-circle-fill"></i></button>
-    
-    <!-- Header -->
     <header>
-        <!-- Logo -->
         <div class="logo">
             <a href="home.html"><h1>Lørnify</h1></a>
         </div>
 
-        <!-- Navigation -->
         <nav class="nav">
-            <!-- Laver en trigger som en checkbox -->
+            <!-- trigger laves som checkbox -->
             <input class="nav-trigger-input" type="checkbox" id="trigger" aria-label="open the navigation"/>
 
-            <!-- En knap til vores trigger -->
             <label class="nav-button" for="trigger">
                 <span></span>
             </label>
 
-            <!-- En liste med navigations menuen -->
             <ul class="nav-list">
                 <li class="nav-item">
                     <a href="udd-info.html" class="nav-link">
@@ -87,17 +74,15 @@
         </nav>
     </header>
 
-    <!-- Alt vores indhold -->
     <div class="content">
-        <!-- Banner -->
         <div class="banner banner-tutorial">
+            <!-- Banner -->
             <h1 class="banner-title">Tutorials</h1>
             <h2 class="banner-txt">
                 Relevante programmer til multimediedesignuddannelsen
             </h2>
         </div>   
 
-        <!-- Tutorials -->
         <div class="tutorials">
             <form id="form" role="search"> 
                 <input id="searchbar" onkeyup="search_tut()" type="text" name="search" placeholder="Search..">
@@ -105,39 +90,35 @@
             </form>
             
             <!-- Illustrator -->
-            <div class="illustrator tuts" id="illustrator">
+            <div class="illustrator tuts">
                 <h2>Adobe Illustrator</h2>
                 <p>
                     Denne video vil kort vise dig om hvordan man kommer igang med Illustrator, og give et eksempel på hvordan man kan tenge en illustration i programmet.
                 </p>
-                <video controls>
-                    <source src="#" type="video/mpeg">
-                </video>
+                <iframe src="https://www.youtube.com/embed/bAeDese48EQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
             <!-- InDesign -->
-            <div class="indesign tuts" id="indesign">
+            <div class="indesign tuts">
                 <h2>Adobe InDesign</h2>
                 <p>
                     Denne video vil kort vise dig om hvordan man kommer igang med InDesign, og vise .
                 </p>
-                <video controls>
-                    <source src="#" type="video/mpeg">
-                </video>
+                <iframe src="https://www.youtube.com/embed/OdVTX1ON0NY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
             <!-- Photoshop -->
-            <div class="photoshop tuts" id="photoshop">
+            <div class="photoshop tuts">
                 <h2>Adobe Photoshop</h2>
                 <p>
                     Denne video vil kort vise dig om hvordan man kommer igang med Photoshop, og vise hvordan man kan fjerne en baggrund og generelt om de forskellige tools.
                 </p>
-                <iframe src="https://www.youtube.com/embed/83424qpUiyA" title="Photoshop Tutorial YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/83424qpUiyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
-            <!-- PremierePro -->
-            <div class="premirepro tuts" id="premirepro">
-                <h2>Adobe PremierePro</h2>
+            <!-- PremirePro -->
+            <div class="premirepro tuts">
+                <h2>Adobe PremirePro</h2>
                 <p>
                     Denne video vil kort vise dig de vigtigeste ting indenfor Premiere pro, såsom klipning, layout og transitions.
                 </p>
@@ -145,7 +126,7 @@
             </div>
 
             <!-- Figma / FigJam -->
-            <div class="figma tuts" id="figma">
+            <div class="figma tuts">
                 <h2>Figma / FigJam</h2>
                 <p>
                     Denne video vil kort vise dig hvad man kan bruge FigJam til og hvordan man kan lave en prototype i Figma.
@@ -154,7 +135,7 @@
             </div>
 
             <!-- Visual Studio Code -->
-            <div class="visualstudio tuts" id="visualstudio">
+            <div class="visualstudio tuts">
                 <h2>Visual Studio Code</h2>
                 <p>
                     Denne video vil kort vise dig hvordan man intallerer og opretter filer i Visual Studio Code.
@@ -163,7 +144,7 @@
             </div>
 
             <!-- WordPress og MAMP -->
-            <div class="wordpress tuts" id="wordpress">
+            <div class="wordpress tuts">
                 <h2>WordPress og MAMP</h2>
                 <p>
                     Denne video vil kort vise dig hvordan man kommer igang med at bruge wordpress og MAMP.
@@ -175,9 +156,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
-        <!-- Kontakt -->
         <div class="footer-contact">
             <h2>Kontakt</h2>
             <a href="#">
@@ -202,69 +181,33 @@
             </a>
         </div>
 
-        <!-- Tutorials -->
         <div class="footer-tutorial">
             <h2>Tutorials</h2>
             <ul>
-                <li>
-                    <a href="tutorials.html#illustrator">Adobe Illustrator</a>
-                </li>
-
-                <li>
-                    <a href="tutorials.html#indesign">Adobe InDesign</a>
-                </li>
-
-                <li>
-                    <a href="tutorials.html#photoshop">Adobe Photoshop</a>
-                </li>
-
-                <li>
-                    <a href="tutorials.html#premirepro">Adobe PremierePro</a>
-                </li>
-
-                <li>
-                    <a href="tutorials.html#figma">Figma / FigJam</a>
-                </li>
-
-                <li>
-                    <a href="tutorials.html#visualstudio">Visual Studio Code</a>
-                </li>
-
-                <li>
-                    <a href="tutorials.html#wordpress">WordPress og MAMP</a>
-                </li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe InDesign</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe PremirePro</li>
+                <li>Figma / FigJam</li>
+                <li>Visual Studio Code</li>
+                <li>WordPress og MAMP</li>
             </ul>
         </div>
 
-        <!-- Podcasts -->
         <div class="footer-podcast">
             <h2>Podcasts</h2>
             <ul>
-                <li>
-                    <a href="podcast.html#one">Korte og mellemlange uddannelser</a>
-                </li>
-
-                <li>
-                    <a href="podcast.html#two">Kommunikation og marketing</a>
-                </li>
-
-                <li>
-                    <a href="podcast.html#three">Videoproduktion</a>
-                </li>
-
-                <li>
-                    <a href="podcast.html#four">UX og UI</a>
-                </li>
-
-                <li>
-                    <a href="podcast.html#five">Job- og karrieremuligheder</a>
-                </li>
+                <li>Korte og mellemlange uddannelser</li>
+                <li>Kommunikation og marketing</li>
+                <li>Videoproduktion</li>
+                <li>UX og UI</li>
+                <li>Job- og karrieremuligheder</li>
             </ul>
         </div>
     </footer>
-
-    <!-- JavaScript Import -->
-    <script src="script.js"></script>
 </body>
+
+<!-- JavaScript Import -->
+<script src="script.js"></script>
 
 </html>
