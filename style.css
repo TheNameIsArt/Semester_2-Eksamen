@@ -1303,13 +1303,13 @@ body p {
     }
     
     .all-info ul {
-        margin-left: 2vh 3.5vw;
+        margin: 2vh 3.5vw;
         padding: 0 3vw;
     }
     
     .all-info li, .all-info em {
         font-family: 'Prata', serif;
-        font-size: 2.5vw;
+        font-size: 1.5vw;
         line-height: 4vh;
     }
     
@@ -1384,18 +1384,17 @@ body p {
     
     .all-mul-info p {
         font-weight: 300;
-        padding: 5vh 15vw 0;
         text-align: left;
     }
     
     .all-mul-info ul {
-        margin-left: 2vh 3.5vw;
+        margin: 2vh 3.5vw;
         padding: 0 3vw;
     }
     
     .all-mul-info li {
         font-family: 'Prata', serif;
-        font-size: 2.5vw;
+        font-size: 1.5vw;
         line-height: 4vh;
         text-align: left;
         font-weight: 300;
@@ -1432,34 +1431,34 @@ body p {
     .hvad-mul, .sem-mul {
         display: flex;
         background-color: #ffb580;
-        margin: 2vh 2vw;
-        height: 50vh;
+        margin: 5vh 12vw;
+        height: 60vh;
         border-radius: 50px;
     }
     
     .hvad-mul img {
-        height: 50vh;
+        height: 60vh;
         border-radius: 50px 0 0 50px;
     }
     
     .forvent-mul {
         display: flex;
         background-color: #74CCBD;
-        margin: 2vh 2vw;
-        height: 50vh;
+        margin: 5vh 12vw;
+        height: 60vh;
         border-radius: 50px;
     }
     
     .forvent-mul img {
-        height: 50vh;
+        height: 60vh;
         border-radius: 0 50px 50px 0;
     }
     
     .karriere-mul {
         display: flex;
         background-color: #74CCBD;
-        margin: 2vh 2vw;
-        height: 48vh;
+        margin: 5vh 12vw;
+        height: 60vh;
         border-radius: 50px;
     }
     
