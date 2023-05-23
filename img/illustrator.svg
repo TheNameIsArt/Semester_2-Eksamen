@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 659.33 424.62">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 659.34 424.61">
   <defs>
     <style>
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+      .cls-1 {
         stroke-miterlimit: 10;
+        stroke-width: 1px;
       }
 
-      .cls-1, .cls-7, .cls-6 {
+      .cls-1, .cls-2, .cls-3 {
         fill: gray;
       }
 
@@ -14,46 +15,45 @@
         stroke: gray;
       }
 
-      .cls-2, .cls-4 {
+      .cls-5, .cls-4 {
         fill: none;
       }
 
-      .cls-2, .cls-5 {
+      .cls-5, .cls-4, .cls-6, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5, .cls-6 {
         stroke: #1d1d1b;
       }
 
-      .cls-3 {
-        fill: #faef83;
-        stroke: #000;
-      }
-
-      .cls-5 {
+      .cls-6 {
         fill: #fff;
       }
 
-      .cls-6 {
+      .cls-3 {
         stroke: #bfbfbf;
       }
 
-      .cls-8 {
+      .cls-7 {
         fill: #1d1d1b;
       }
     </style>
   </defs>
-  <rect class="cls-5" x="87.88" y="104.74" width="450.39" height="222.92"/>
-  <rect class="cls-8" x="204.72" y="391.47" width="216.71" height="33.15"/>
-  <rect class="cls-8" x="297.95" y="326.01" width="30.25" height="65.47"/>
-  <circle class="cls-3" cx="455.96" cy="144.57" r="23.2"/>
-  <polygon class="cls-2" points="245.47 327.66 221.94 290.72 368.95 160.4 501.19 327.66 245.47 327.66"/>
-  <polyline class="cls-2" points="245.47 327.66 169.92 209.02 87.88 276.14"/>
-  <polygon class="cls-7" points="55.36 64.47 56.8 40.58 67.77 23.6 110.77 22.8 55.36 64.47"/>
-  <polygon class="cls-7" points="58.15 69.04 81.86 72.28 100.65 64.83 109.81 22.8 58.15 69.04"/>
-  <polygon class="cls-7" points="100.65 64.83 67.77 23.6 103.67 11.85 121.3 31.83 100.65 64.83"/>
-  <rect class="cls-7" x="109.33" y="5.98" width="24.55" height="15.28" rx="1.5" ry="1.5" transform="translate(50.56 -86) rotate(48.12)"/>
-  <path class="cls-4" d="m23.33,19.12l12.54-.02c.18.01,2.9,1.78,3,1.94l1.78,3.51c.06.09,1.44,3.04,1.44,3.15l.52,6.01c0,.06-2.25,6.56-2.26,6.62l-3.66,6.53-.52,5.14c.01.09.34,5.04.35,5.14l3.21,4.69c.08.2.27.33.48.35l15.21,1.31"/>
-  <rect class="cls-6" x="587.7" y="194.61" width="71.14" height="57.64"/>
-  <path class="cls-4" d="m17.25,242.5l-15.69,23.06c-.34.5-1.13.2-1.05-.4l7.24-55.64c.06-.48.65-.68.99-.33l37.25,37.49c.4.4.04,1.08-.52.98l-28.21-5.15Z"/>
-  <polygon class="cls-4" points="553.82 65.53 511.92 72.28 547.67 35.78 569.1 49.33 553.82 65.53"/>
-  <rect class="cls-1" x="546.18" y="25.42" width="34.99" height="18.8" transform="translate(108.28 -299.18) rotate(32.72)"/>
-  <path class="cls-4" d="m300.55,60.02c-.31-1.41-4.45-21.8,9.95-36.19,11.63-11.62,30.36-14.34,46.14-6.33"/>
+  <rect class="cls-6" x="87.88" y="104.73" width="450.39" height="222.92"/>
+  <rect class="cls-7" x="204.72" y="391.46" width="216.71" height="33.15"/>
+  <rect class="cls-7" x="297.95" y="326" width="30.25" height="65.47"/>
+  <polygon class="cls-5" points="245.47 327.65 221.94 290.71 368.95 160.39 501.19 327.65 245.47 327.65"/>
+  <polyline class="cls-5" points="245.47 327.65 169.92 209.01 87.88 276.13"/>
+  <polygon class="cls-2" points="55.36 64.46 56.8 40.57 67.77 23.59 110.77 22.79 55.36 64.46"/>
+  <polygon class="cls-2" points="58.15 69.03 81.86 72.27 100.65 64.82 109.81 22.79 58.15 69.03"/>
+  <polygon class="cls-2" points="100.65 64.82 67.77 23.59 103.67 11.84 121.3 31.82 100.65 64.82"/>
+  <rect class="cls-2" x="113.96" y="1.35" width="15.28" height="24.55" rx="1.5" ry="1.5" transform="translate(21.97 84.65) rotate(-41.88)"/>
+  <path class="cls-4" d="m23.33,19.11l12.54-.02c.18.01,2.9,1.78,3,1.94l1.78,3.51c.06.09,1.44,3.04,1.44,3.15l.52,6.01c0,.06-2.25,6.56-2.26,6.62l-3.66,6.53-.52,5.14c0,.09.34,5.04.35,5.14l3.21,4.69c.08.2.27.33.48.35l15.21,1.31"/>
+  <rect class="cls-3" x="587.7" y="194.6" width="71.14" height="57.64"/>
+  <path class="cls-4" d="m17.25,242.49l-15.69,23.06c-.34.5-1.13.2-1.05-.4l7.24-55.64c.06-.48.65-.68.99-.33l37.25,37.49c.4.4.04,1.08-.52.98l-28.21-5.15h0Z"/>
+  <polygon class="cls-4" points="553.82 65.52 511.92 72.27 547.67 35.77 569.1 49.32 553.82 65.52"/>
+  <rect class="cls-1" x="554.29" y="17.29" width="18.8" height="34.99" transform="translate(229.73 490.23) rotate(-57.28)"/>
+  <path class="cls-4" d="m300.55,60.01c-.31-1.41-4.45-21.8,9.95-36.19,11.63-11.62,30.36-14.34,46.14-6.33"/>
+  <image width="242" height="237" transform="translate(434.48 115.95) scale(.38)" xlink:href="../../../../../../Downloads/Ai-removebg-preview.png"/>
 </svg>
