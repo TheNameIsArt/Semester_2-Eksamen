@@ -62,7 +62,7 @@ function search_tut() {
 }
 
 // Search bar - information
-function search_tut() {
+function search_udd() {
   let input = document.getElementById('searchbar').value
   input=input.toLowerCase();
   let x = document.getElementsByClassName('udd-info');
