@@ -136,7 +136,7 @@ body p {
         position: fixed;
     }
     
-    /* Gør knappen hvis */
+    /* Gør knappen hvid */
     .nav-trigger-input:focus + label {
         color: white;
     }
@@ -860,7 +860,7 @@ body p {
         z-index: 10;
         display: flex;
         align-items: center;
-        width: 2.5vw; /* Bruger width og height til at styre størrelsen på burger menuen */
+        width: 2.5vw; 
         height: 4vh;
         margin: 2.5vh 7vw;
         color: white;
@@ -1592,5 +1592,3 @@ body p {
         width: 33%;
     }
 }
-
-
