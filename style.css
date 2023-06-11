@@ -1139,6 +1139,7 @@ body p {
     .slideshow-container img {
         height: 50vh;
         width: 100%;
+        cursor: pointer;
     }
     
     /* hide the images by default */
