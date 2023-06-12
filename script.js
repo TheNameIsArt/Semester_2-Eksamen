@@ -38,7 +38,7 @@ function showSlides(n) {
 
   if (n > slides.length) {slideIndex = 1} // hvis n er større end antal slides (slides.length), sættes slideIndex til 1 (første slide)
 
-  if (n < 1) {slideIndex = slides.length} // hvis n er mindre end antal slides (slides.length), sættes slideIndex til det sidste slide (slides-length). Dette tillader loopin fra den sidste slide til den første
+  if (n < 1) {slideIndex = slides.length} // hvis n er mindre end 1, sættes slideIndex til det sidste slide (slides-length). Dette tillader loopen at gå fra den sidste slide til den første
 
   // gentager hvert slide-element ved hjælp af loop og sætter "display = none", for at skjule alle slides
   for (i = 0; i < slides.length; i++) {
@@ -52,7 +52,7 @@ function showSlides(n) {
 
 // ------ Search bar - tutorials ------ //
 function search_tut() {
-  let input = document.getElementById('searchbar').value // henter værdien der er indtastet i vores "searchbar" og tildeler den til variabel inputtet
+  let input = document.getElementById('searchbar').value // henter værdien der er indtastet i vores "searchbar" og tildeler den til variabelet "input"
 
   input=input.toLowerCase(); // konverterer inputsne til små bogstaver
 
@@ -61,7 +61,7 @@ function search_tut() {
   // laver et for-loop der gentager hvert element i "x"
   for (i = 0; i < x.length; i++) { // sætter loop-tælleren "i" til 0 og fortsætter så længe "i" er mindre en længden af "x" (længden = antallet af elementer på siden)
 
-      if (!x[i].innerHTML.toLowerCase().includes(input)) { // tjekker om vores indholdet med små bogstaver i "x[i]" ikke inkluderer inputværdien. include() bestemmer om inputværdien er til stede i vores indhold 
+      if (!x[i].innerHTML.toLowerCase().includes(input)) { // tjekker om vores indholdet i "x[i]" ikke inkluderer inputværdien. include() bestemmer om inputværdien er til stede i vores indhold 
           x[i].style.display="none"; // hvis det er true, betyder det at elementets indhold ikke matcher det man søger på og elementets dispaly sættes til "none"
       }
       else { // hvis det er false, matcher elementets inhold med det man søger på og display bliver synligt
